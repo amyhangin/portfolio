@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">"Amy Hang in _____." Survery Form</h1>
+      <p id="description" class="description">Thank you for taking the time to help me improve my travel blog!</p>
+    </header>
+    <div class="container">
+    <form id="survey-form">
+      <div>
+        <label for="name" id="name-label">Name</label>
+        <input id="name" id="name-label" type="text" class="form-input" required placeholder="First (Middle) Last name">
+        <label for="email" id="email-label">Email</label>
+        <input id="email" id="email-label" type="email" class="form-input" required placeholder="hello@amyhangin.com">
+        <label for="number" id="number-label">Age<span class="hint">(optional)</span></label>
+        <input id="number" id="number-label" type="number" class="form-input" min="0" max="2" placeholder="30">
+    </div>
+
+      <div class="group">
+        <p>How often do you travel for leisure?</p>
+          <select name="dropdown" id="dropdown" class="form-input">
+            <option value="Once or twice a year">Once or twice a year</option>
+            <option value="Three or more times a year">Three or more times a year</option>
+            <option value="Once or twice a month">Once or twice a month</option>
+            <option value="Every month">Every month</option>
+            <option value="Every week/weekend">Every week/weekend</option>
+            <option value="Never in my life">Never in my life</option>
+            <option value="Other">Other</option>
+          </select>
+      </div>
+
+      <div class="group">
+  <p>How was your experience on amyhangin.com?</p>
+  <label for="experience1">
+    <input id="experience1" type="radio" required name="experience" value="Terrible" class="radio-input"> Terrible</label>
+  <label for="experience2">
+    <input id="experience2" type="radio" required name="experience" value="Not bad" class="radio-input">Not Bad</label>
+  <label for="experience3">
+    <input id="experience3" type="radio" required name="experience" value="Neutral" class="radio-input">Neutral</label>
+  <label for="experience4">
+    <input id="experience4" type="radio" required name="experience" value="Good" class="radio-input">Good</label>
+  <label for="experience5">
+    <input id="experience5" type="radio" required name="experience" value="Great" class="radio-input">Great</label>
+      </div>
+
+      <div class="group">
+        <p>What kind of content would you like to see more of?<span class="hint">(Check all that apply)</span></p>
+        <label for="content1">
+          <input id="content1" type="checkbox" name="content" class="checkbox-input" value="outfits and accessories">Travel outfits and accessories</label>
+        <label for="content2">
+          <input id="content2" type="checkbox" name="content" class="checkbox-input"  value="gear">Travel gear</label>
+        <label for="content3">
+          <input id="content3" type="checkbox" name="content" class="checkbox-input" value="guides">Travel guides</label>
+        <label for="content4">
+          <input id="content4" type="checkbox" name="content" class="checkbox-input" value="vlogs">Travel vlogs</label>
+        <label for="content5">
+          <input id="content5" type="checkbox" name="content" class="checkbox-input" value="other">Other (Let me know below please)</label>
+      </div>
+
+      <div class="group">
+        <p>Any comments, suggestions, or questions?</p>
+        <textarea id="comments" class="textarea-input" name="comment" placeholder="Amazing travel content! :)"></textarea>
+      </div>
+
+      <div class="group">
+        <button id="submit" type="submit" value="Submit" class="submit-button">Submit
+        </button>
+      </div>
+    </body>
+  </form>
+</html>
